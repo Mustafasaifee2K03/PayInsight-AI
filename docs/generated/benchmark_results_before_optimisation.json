@@ -1,0 +1,153 @@
+{
+  "run_at": "2026-11-21 05:57 UTC",
+  "machine": "Windows 10, Python 3.10.5, AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "repeats": 7,
+  "datasets": [
+    {
+      "rows": 30000,
+      "file_mb": 13.6,
+      "generation_s": 0.96,
+      "cases": {
+        "Overall success rate (full window)": {
+          "median_ms": 19.16,
+          "min_ms": 18.94,
+          "max_ms": 20.92,
+          "n": 7
+        },
+        "Daily transaction aggregation (60 days)": {
+          "median_ms": 30.74,
+          "min_ms": 29.93,
+          "max_ms": 31.38,
+          "n": 7
+        },
+        "Bank-level breakdown": {
+          "median_ms": 44.55,
+          "min_ms": 43.62,
+          "max_ms": 45.23,
+          "n": 7
+        },
+        "Previous-period comparison (7d vs 7d)": {
+          "median_ms": 9.91,
+          "min_ms": 8.71,
+          "max_ms": 11.11,
+          "n": 7
+        },
+        "Multi-dimensional (bank x payment method)": {
+          "median_ms": 59.12,
+          "min_ms": 58.48,
+          "max_ms": 62.79,
+          "n": 7
+        },
+        "Period comparison by bank (segmented)": {
+          "median_ms": 14.31,
+          "min_ms": 13.95,
+          "max_ms": 15.43,
+          "n": 7
+        },
+        "Repeated bank breakdown (cache hit)": {
+          "median_ms": 4.74,
+          "min_ms": 4.56,
+          "max_ms": 5.04,
+          "n": 7
+        },
+        "E2E: 'What is the overall success rate?' (cold cache)": {
+          "median_ms": 228.66,
+          "min_ms": 228.38,
+          "max_ms": 229.9,
+          "n": 3
+        },
+        "E2E: 'Compare payment success rates by bank' (cold cache)": {
+          "median_ms": 241.56,
+          "min_ms": 237.35,
+          "max_ms": 243.89,
+          "n": 3
+        },
+        "E2E: 'Why did payment success rate decline?' (cold cache)": {
+          "median_ms": 278.49,
+          "min_ms": 277.51,
+          "max_ms": 280.38,
+          "n": 3
+        },
+        "E2E: 'Why did payment success rate decline?' (warm cache)": {
+          "median_ms": 52.27,
+          "min_ms": 51.9,
+          "max_ms": 52.54,
+          "n": 3
+        }
+      }
+    },
+    {
+      "rows": 100000,
+      "file_mb": 45.7,
+      "generation_s": 3.26,
+      "cases": {
+        "Overall success rate (full window)": {
+          "median_ms": 52.47,
+          "min_ms": 51.44,
+          "max_ms": 68.46,
+          "n": 7
+        },
+        "Daily transaction aggregation (60 days)": {
+          "median_ms": 105.02,
+          "min_ms": 103.86,
+          "max_ms": 113.43,
+          "n": 7
+        },
+        "Bank-level breakdown": {
+          "median_ms": 130.77,
+          "min_ms": 130.29,
+          "max_ms": 134.11,
+          "n": 7
+        },
+        "Previous-period comparison (7d vs 7d)": {
+          "median_ms": 22.69,
+          "min_ms": 22.13,
+          "max_ms": 22.82,
+          "n": 7
+        },
+        "Multi-dimensional (bank x payment method)": {
+          "median_ms": 189.66,
+          "min_ms": 182.98,
+          "max_ms": 194.22,
+          "n": 7
+        },
+        "Period comparison by bank (segmented)": {
+          "median_ms": 44.44,
+          "min_ms": 43.51,
+          "max_ms": 46.93,
+          "n": 7
+        },
+        "Repeated bank breakdown (cache hit)": {
+          "median_ms": 4.63,
+          "min_ms": 4.4,
+          "max_ms": 7.22,
+          "n": 7
+        },
+        "E2E: 'What is the overall success rate?' (cold cache)": {
+          "median_ms": 692.75,
+          "min_ms": 692.45,
+          "max_ms": 725.24,
+          "n": 3
+        },
+        "E2E: 'Compare payment success rates by bank' (cold cache)": {
+          "median_ms": 732.44,
+          "min_ms": 729.29,
+          "max_ms": 733.4,
+          "n": 3
+        },
+        "E2E: 'Why did payment success rate decline?' (cold cache)": {
+          "median_ms": 820.58,
+          "min_ms": 819.61,
+          "max_ms": 825.01,
+          "n": 3
+        },
+        "E2E: 'Why did payment success rate decline?' (warm cache)": {
+          "median_ms": 52.06,
+          "min_ms": 51.75,
+          "max_ms": 53.5,
+          "n": 3
+        }
+      }
+    }
+  ]
+}
